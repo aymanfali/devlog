@@ -1,0 +1,66 @@
+devlog_db
+-------------
+
+users
+	name
+	email
+	avatar
+	bio
+	status [suspended, active]
+	created_at
+	updated_at
+	deleted_at
+
+categories
+	name
+	image
+	status [published, draft]
+	user_id
+	created_at
+	updated_at
+	deleted_at
+	
+posts
+	title
+	content
+	image
+	status [published, draft]
+	user_id
+	category_id
+	created_at
+	updated_at
+	deleted_at
+
+comments
+	user_id
+	post_id
+	comment_id
+	created_at
+	updated_at
+	deleted_at
+
+tags
+	tag_name
+	post_id
+	created_at
+	updated_at
+	deleted_at
+
+contact
+	name
+	email
+	subject
+	message
+	type [suggestion, complication, information]
+	created_at
+	updated_at
+	deleted_at
+
+site_info
+	site_name
+	site_description
+	site_keywords
+	site_logo
+	email_address
+	phone_numbers
+	social_accounts
